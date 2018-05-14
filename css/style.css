@@ -1,4 +1,35 @@
 .main {
-  color: red; }
+  width: 400px;
+  color: blue;
+  height: 600px;
+  border-radius: 10px 15px; }
+  .main .main-content {
+    background-color: blue;
+    color: black; }
+    .main .main-content a {
+      font-weight: bold; }
+      .main .main-content a:hover {
+        color: red; }
+  .main .main-info {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue; }
+
+.main2 {
+  width: 400px;
+  color: blue;
+  height: 600px;
+  border-radius: 10px 5px; }
+  .main2 .main-content {
+    background-color: blue;
+    color: black; }
+    .main2 .main-content a {
+      font-weight: bold; }
+      .main2 .main-content a:hover {
+        color: red; }
+  .main2 .main-info {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,5 @@
+@each $var,$color in ((item1,blue),(item2,yellow),(item3,red)){
+  .#{$var}{
+    color: $color;
+  }
+}

@@ -1,0 +1,8 @@
+$name: main;
+$border: border;
+
+.container .#{$name}
+{
+    color:red;
+    #{border}-color:#ccc;
+}

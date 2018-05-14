@@ -1,3 +1,53 @@
-.main{
- color: red;
+$color: blue;
+$color2: red;
+
+@mixin border-rd($var1,$var2){
+  width: 400px;
+  color: $color;
+  height: 600px;
+  border-radius: $var1 $var2;
+}
+
+.main {
+   @include border-rd(10px,15px);
+   .main-content {
+     background-color: $color;
+     color: black;
+     a{
+       font-weight: bold;
+       &:hover{
+         color:$color2;
+       }
+     }
+   }
+   .main-info{
+     font:{
+       family: Arial;
+       size:30px;
+       weight: bold;
+     }
+     color: $color;
+   }
+ }
+
+.main2 {
+  @include border-rd(10px,5px);
+  .main-content {
+    background-color: $color;
+    color: black;
+    a{
+      font-weight: bold;
+      &:hover{
+        color:$color2;
+      }
+    }
+  }
+  .main-info{
+    font:{
+      family: Arial;
+      size:30px;
+      weight: bold;
+    }
+    color: $color;
+  }
 }

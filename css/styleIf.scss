@@ -1,0 +1,11 @@
+$condition: blue;
+
+.main{
+  @if($condition == red){
+    background: red;
+  }@else if($condition==green){
+    background: green;
+  }@else {
+    background: blue;
+  }
+}
